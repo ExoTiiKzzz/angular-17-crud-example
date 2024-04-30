@@ -19,8 +19,8 @@ jobs:
           node-version: 20
       - name: npm install
         run: npm ci
-      - name: npm test
-        run: ng test --browsers ChromeHeadless
+      - name: npm testprod
+        run: npm testprod
       - name: npm build
         run: npm run build
       - uses: sonarsource/sonarqube-scan-action@master
