@@ -20,7 +20,7 @@ jobs:
       - name: npm install
         run: npm ci
       - name: npm test
-        run: npm test
+        run: ng test --browsers ChromeHeadless
       - name: npm build
         run: npm run build
       - uses: sonarsource/sonarqube-scan-action@master
