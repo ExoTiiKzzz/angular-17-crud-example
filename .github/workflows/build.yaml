@@ -26,6 +26,6 @@ jobs:
             cd angular-17-crud-example
             git pull origin main
             npm install
-            npm run build
+            npm run build --prod
             cd ..
             docker compose up -d
