@@ -22,8 +22,8 @@ jobs:
           port: 22
           script: |
             cd ${{ secrets.SSH_PATH }}
-            docker-compose down
+            docker compose down
             cd angular-17-crud-example
             git pull origin main
             cd ..
-            docker-compose up -d
+            docker compose up -d
