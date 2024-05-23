@@ -7,7 +7,7 @@ import { Tutorial } from '../models/tutorial.model';
 //current host but with 8080 port
 const currentHost = window.location.host;
 console.log(currentHost);
-const baseUrl = `http://${currentHost}:8080/api/tutorials`;
+const baseUrl = `http://test.com:8080/api/tutorials`;
 
 @Injectable({
   providedIn: 'root',
