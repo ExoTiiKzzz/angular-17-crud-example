@@ -28,4 +28,6 @@ jobs:
             npm install
             npm run build --prod
             cd ..
+            docker rmi angular-17-crud-example
+            docker build -t angular-17-crud-example .
             docker compose up -d
